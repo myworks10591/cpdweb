@@ -16,30 +16,36 @@
     { "id": 4, "platform": "instagram", "icon": "fab fa-instagram", "url": "#" }
   ],
   "navigation": [
-    { "id": 1, "name": "Home", "url": "/", "active": true },
-    { "id": 2, "name": "About", "url": "/about", "active": false },
-    { "id": 3, "name": "Service", "url": "/service", "active": false },
-    { "id": 4, "name": "Project", "url": "/project", "active": false },
-    { "id": 5, "name": "Contact", "url": "/contact", "active": false }
+    { "id": 1, "name": "Home", "url": "/" },
+    { "id": 2, "name": "About", "url": "/about" },
+    { "id": 3, "name": "Service", "url": "/service" },
+    { "id": 4, "name": "Project", "url": "/project" },
+    { "id": 5, "name": "Contact", "url": "/contact" }
   ],
+  "pageHeaders": {
+    "about": { "title": "About Us", "image": "img/carousel-2.jpg" },
+    "service": { "title": "Our Services", "image": "img/carousel-3.jpg" },
+    "project": { "title": "Our Projects", "image": "img/carousel-1.jpg" },
+    "contact": { "title": "Contact Us", "image": "img/carousel-2.jpg" }
+  },
   "banners": [
     {
       "id": 1,
-      "image": "/img/carousel-1.jpg",
+      "image": "img/carousel-1.jpg",
       "title": "Pioneers Of Solar And Renewable Energy",
       "description": "Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.",
       "alt": "Solar Energy Banner 1"
     },
     {
       "id": 2,
-      "image": "/img/carousel-2.jpg",
+      "image": "img/carousel-2.jpg",
       "title": "Pioneers Of Solar And Renewable Energy",
       "description": "Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.",
       "alt": "Solar Energy Banner 2"
     },
     {
       "id": 3,
-      "image": "/img/carousel-3.jpg",
+      "image": "img/carousel-3.jpg",
       "title": "Pioneers Of Solar And Renewable Energy",
       "description": "Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.",
       "alt": "Solar Energy Banner 3"
@@ -56,21 +62,21 @@
       "id": 1,
       "name": "Solar Panels",
       "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
-      "image": "/img/img-600x400-1.jpg",
+      "image": "img/img-600x400-1.jpg",
       "icon": "fa fa-solar-panel fa-3x"
     },
     {
       "id": 2,
       "name": "Wind Turbines",
       "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
-      "image": "/img/img-600x400-2.jpg",
+      "image": "img/img-600x400-2.jpg",
       "icon": "fa fa-wind fa-3x"
     },
     {
       "id": 3,
       "name": "Hydropower Plants",
       "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
-      "image": "/img/img-600x400-3.jpg",
+      "image": "img/img-600x400-3.jpg",
       "icon": "fa fa-lightbulb fa-3x"
     }
   ],
@@ -79,7 +85,7 @@
       "id": 1,
       "name": "John Doe",
       "designation": "Solar Engineer",
-      "image": "/img/team-1.jpg",
+      "image": "img/team-1.jpg",
       "social": [
         { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
         { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
@@ -90,7 +96,7 @@
       "id": 2,
       "name": "Jane Smith",
       "designation": "Project Manager",
-      "image": "/img/team-2.jpg",
+      "image": "img/team-2.jpg",
       "social": [
         { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
         { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
@@ -101,7 +107,7 @@
       "id": 3,
       "name": "Mike Johnson",
       "designation": "Technical Lead",
-      "image": "/img/team-3.jpg",
+      "image": "img/team-3.jpg",
       "social": [
         { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
         { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
@@ -114,21 +120,21 @@
       "id": 1,
       "name": "Sarah Wilson",
       "profession": "Business Owner",
-      "image": "/img/testimonial-1.jpg",
+      "image": "img/testimonial-1.jpg",
       "message": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita."
     },
     {
       "id": 2,
       "name": "David Brown",
       "profession": "Homeowner",
-      "image": "/img/testimonial-2.jpg",
+      "image": "img/testimonial-2.jpg",
       "message": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita."
     },
     {
       "id": 3,
       "name": "Lisa Davis",
       "profession": "Environmental Consultant",
-      "image": "/img/testimonial-3.jpg",
+      "image": "img/testimonial-3.jpg",
       "message": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita."
     }
   ]
