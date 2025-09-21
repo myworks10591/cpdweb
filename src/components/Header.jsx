@@ -1,28 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = ({ company, contact, social, navigation }) => {
   const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <>
       {/* Topbar */}
       <div className="bg-gray-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="hidden lg:flex justify-between items-center py-2">
-            <div className="flex space-x-6">
+          <div className="hidden md:flex justify-between items-center py-2">
+            <div className="flex flex-col md:flex-row md:space-x-6 space-y-1 md:space-y-0">
               <div className="flex items-center">
                 <i className="fa fa-map-marker-alt text-primary mr-2"></i>
-                <span className="text-sm">{contact.address}</span>
+                <span className="text-xs md:text-sm">{contact.address}</span>
               </div>
               <div className="flex items-center">
                 <i className="far fa-clock text-primary mr-2"></i>
-                <span className="text-sm">{contact.hours}</span>
+                <span className="text-xs md:text-sm">{contact.hours}</span>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <div className="flex items-center">
                 <i className="fa fa-phone-alt text-primary mr-2"></i>
-                <span className="text-sm">{contact.phone}</span>
+                <span className="text-xs md:text-sm">{contact.phone}</span>
               </div>
               <div className="flex space-x-1">
                 {social.map(item => (
@@ -40,9 +41,11 @@ const Header = ({ company, contact, social, navigation }) => {
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
-            <div className="flex items-center border-r border-gray-200 pr-8">
-              <h2 className="text-2xl font-bold text-primary py-4">{company.name}</h2>
+            <div className="flex items-center lg:border-r border-gray-200 lg:pr-8">
+              <h2 className="text-xl lg:text-2xl font-bold text-primary py-4">{company.name}</h2>
             </div>
+            
+            {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-8">
               {navigation.map(item => {
                 const isActive = (item.url === '/' && location.pathname === '/') || 
@@ -58,6 +61,41 @@ const Header = ({ company, contact, social, navigation }) => {
                 );
               })}
               <button className="bg-primary text-white px-6 py-3 rounded-none hover:bg-primary-700 transition-colors">
+                Get A Quote <i className="fa fa-arrow-right ml-2"></i>
+              </button>
+            </div>
+            
+            {/* Mobile Menu Button */}
+            <button 
+              className="lg:hidden p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <div className="w-6 h-6 flex flex-col justify-center items-center">
+                <span className={`block w-6 h-0.5 bg-dark transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+                <span className={`block w-6 h-0.5 bg-dark mt-1 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
+                <span className={`block w-6 h-0.5 bg-dark mt-1 transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+              </div>
+            </button>
+          </div>
+          
+          {/* Mobile Menu */}
+          <div className={`lg:hidden transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-96 pb-4' : 'max-h-0'}`}>
+            <div className="flex flex-col space-y-2">
+              {navigation.map(item => {
+                const isActive = (item.url === '/' && location.pathname === '/') || 
+                                (item.url !== '/' && location.pathname === item.url);
+                return (
+                  <Link 
+                    key={item.id} 
+                    to={item.url}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`py-3 px-4 transition-colors ${isActive ? 'text-primary bg-gray-50' : 'text-dark hover:text-primary hover:bg-gray-50'}`}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
+              <button className="bg-primary text-white px-4 py-3 mx-4 mt-2 hover:bg-primary-700 transition-colors">
                 Get A Quote <i className="fa fa-arrow-right ml-2"></i>
               </button>
             </div>
