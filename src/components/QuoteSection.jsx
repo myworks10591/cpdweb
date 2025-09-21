@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { getImageUrl } from '../utils/config';
 
 const QuoteSection = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +30,7 @@ const QuoteSection = () => {
             <div className="relative h-full">
               <img
                 className="absolute w-full h-full object-cover"
-                src="/img/quote.jpg"
+                src={getImageUrl('img/quote.jpg')}
                 alt="Get Quote"
               />
             </div>

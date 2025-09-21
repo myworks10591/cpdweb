@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { getImageUrl } from '../utils/config';
 
 const TestimonialCard = ({ testimonial, isActive }) => {
   return (
     <div className={`text-center transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-0 absolute'}`}>
       <div className="relative mb-8">
         <img
-          src={testimonial.image}
+          src={getImageUrl(testimonial.image)}
           alt={testimonial.name}
           className="w-24 h-24 rounded-full mx-auto mb-6 object-cover"
         />

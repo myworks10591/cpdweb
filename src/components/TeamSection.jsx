@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImageUrl } from '../utils/config';
 
 const TeamMember = ({ member }) => {
   return (
@@ -6,7 +7,7 @@ const TeamMember = ({ member }) => {
       <div className="flex">
         <div className="w-3/4">
           <img
-            src={member.image}
+            src={getImageUrl(member.image)}
             alt={member.name}
             className="w-full h-64 object-cover"
           />

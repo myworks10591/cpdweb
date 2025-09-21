@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { getImageUrl } from '../utils/config';
 
 const ProjectsSection = () => {
   const [activeFilter, setActiveFilter] = useState('*');
@@ -11,12 +12,12 @@ const ProjectsSection = () => {
   ];
 
   const projects = [
-    { id: 1, category: 'first', type: 'Solar Panels', image: '/img/img-600x400-6.jpg' },
-    { id: 2, category: 'second', type: 'Wind Turbines', image: '/img/img-600x400-5.jpg' },
-    { id: 3, category: 'third', type: 'Hydropower Plants', image: '/img/img-600x400-4.jpg' },
-    { id: 4, category: 'first', type: 'Solar Panels', image: '/img/img-600x400-3.jpg' },
-    { id: 5, category: 'second', type: 'Wind Turbines', image: '/img/img-600x400-2.jpg' },
-    { id: 6, category: 'third', type: 'Hydropower Plants', image: '/img/img-600x400-1.jpg' }
+    { id: 1, category: 'first', type: 'Solar Panels', image: 'img/img-600x400-6.jpg' },
+    { id: 2, category: 'second', type: 'Wind Turbines', image: 'img/img-600x400-5.jpg' },
+    { id: 3, category: 'third', type: 'Hydropower Plants', image: 'img/img-600x400-4.jpg' },
+    { id: 4, category: 'first', type: 'Solar Panels', image: 'img/img-600x400-3.jpg' },
+    { id: 5, category: 'second', type: 'Wind Turbines', image: 'img/img-600x400-2.jpg' },
+    { id: 6, category: 'third', type: 'Hydropower Plants', image: 'img/img-600x400-1.jpg' }
   ];
 
   const filteredProjects = activeFilter === '*' 
@@ -56,14 +57,14 @@ const ProjectsSection = () => {
             <div key={project.id} className="group">
               <div className="relative overflow-hidden rounded-lg">
                 <img
-                  src={project.image}
+                  src={getImageUrl(project.image)}
                   alt={project.type}
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-dark bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <div className="flex space-x-4">
                     <a
-                      href={project.image}
+                      href={getImageUrl(project.image)}
                       data-lightbox="portfolio"
                       className="w-12 h-12 bg-transparent border-2 border-white rounded-full flex items-center justify-center text-white hover:bg-white hover:text-dark transition-colors"
                     >

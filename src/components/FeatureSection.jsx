@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImageUrl } from '../utils/config';
 
 const FeatureSection = () => {
   const features = [
@@ -40,7 +41,7 @@ const FeatureSection = () => {
             <div className="relative h-full">
               <img
                 className="absolute w-full h-full object-cover"
-                src="/img/feature.jpg"
+                src={getImageUrl('img/feature.jpg')}
                 alt="Features"
               />
             </div>

@@ -1,11 +1,12 @@
 import React from 'react';
+import { getImageUrl } from '../utils/config';
 
 const ServiceCard = ({ service }) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
       <div className="relative">
         <img
-          src={service.image}
+          src={getImageUrl(service.image)}
           alt={service.name}
           className="w-full h-64 object-cover"
         />

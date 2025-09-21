@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { getImageUrl } from '../utils/config';
 
 const Banner = ({ banners, isHomePage = true }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,7 +23,7 @@ const Banner = ({ banners, isHomePage = true }) => {
           }`}
         >
           <img
-            src={banner.image}
+            src={getImageUrl(banner.image)}
             alt={banner.alt}
             className="w-full h-full object-cover"
           />
@@ -56,7 +57,7 @@ const Banner = ({ banners, isHomePage = true }) => {
             aria-label={`Go to slide ${index + 1}`}
           >
             <img
-              src={banner.image}
+              src={getImageUrl(banner.image)}
               alt={banner.alt}
               className="w-full h-full object-cover p-0.5 rounded-full"
             />

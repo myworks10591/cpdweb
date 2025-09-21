@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = ({ company, contact, social, navigation }) => {
+  const location = useLocation();
   return (
     <>
       {/* Topbar */}
@@ -42,15 +44,19 @@ const Header = ({ company, contact, social, navigation }) => {
               <h2 className="text-2xl font-bold text-primary py-4">{company.name}</h2>
             </div>
             <div className="hidden lg:flex items-center space-x-8">
-              {navigation.map(item => (
-                <button 
-                  key={item.id} 
-                  onClick={() => window.setCurrentPage && window.setCurrentPage(item.name.toLowerCase())}
-                  className={`py-4 px-2 transition-colors ${item.active ? 'text-primary border-b-2 border-primary' : 'text-dark hover:text-primary'}`}
-                >
-                  {item.name}
-                </button>
-              ))}
+              {navigation.map(item => {
+                const isActive = (item.url === '/' && location.pathname === '/') || 
+                                (item.url !== '/' && location.pathname === item.url);
+                return (
+                  <Link 
+                    key={item.id} 
+                    to={item.url}
+                    className={`py-4 px-2 transition-colors ${isActive ? 'text-primary border-b-2 border-primary' : 'text-dark hover:text-primary'}`}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
               <button className="bg-primary text-white px-6 py-3 rounded-none hover:bg-primary-700 transition-colors">
                 Get A Quote <i className="fa fa-arrow-right ml-2"></i>
               </button>
