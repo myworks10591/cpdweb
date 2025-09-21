@@ -123,7 +123,7 @@ const App = () => {
         // Simulate API call delay
         await new Promise(resolve => setTimeout(resolve, 1000));
         
-        const response = await fetch('/data.json');
+        const response = await fetch('/cpdweb/data.json');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
