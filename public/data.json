@@ -1,0 +1,135 @@
+{
+  "company": {
+    "name": "CPD Solar",
+    "tagline": "CPD Solar Solution Pvt Ltd"
+  },
+  "contact": {
+    "address": "AN 702, DAFI, Varanasi, Uttar Pradesh 221011",
+    "phone": "9621050421",
+    "email": "info@cpdsolar.com",
+    "hours": "Mon - Fri : 10.00 AM - 06.00 PM"
+  },
+  "social": [
+    { "id": 1, "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
+    { "id": 2, "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
+    { "id": 3, "platform": "linkedin", "icon": "fab fa-linkedin-in", "url": "#" },
+    { "id": 4, "platform": "instagram", "icon": "fab fa-instagram", "url": "#" }
+  ],
+  "navigation": [
+    { "id": 1, "name": "Home", "url": "/", "active": true },
+    { "id": 2, "name": "About", "url": "/about", "active": false },
+    { "id": 3, "name": "Service", "url": "/service", "active": false },
+    { "id": 4, "name": "Project", "url": "/project", "active": false },
+    { "id": 5, "name": "Contact", "url": "/contact", "active": false }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "image": "/img/carousel-1.jpg",
+      "title": "Pioneers Of Solar And Renewable Energy",
+      "description": "Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.",
+      "alt": "Solar Energy Banner 1"
+    },
+    {
+      "id": 2,
+      "image": "/img/carousel-2.jpg",
+      "title": "Pioneers Of Solar And Renewable Energy",
+      "description": "Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.",
+      "alt": "Solar Energy Banner 2"
+    },
+    {
+      "id": 3,
+      "image": "/img/carousel-3.jpg",
+      "title": "Pioneers Of Solar And Renewable Energy",
+      "description": "Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.",
+      "alt": "Solar Energy Banner 3"
+    }
+  ],
+  "stats": [
+    { "id": 1, "icon": "fa fa-users", "count": "850+", "title": "Happy Customers", "description": "Powering homes and businesses with clean energy — saving money, building trust, and creating a brighter future together." },
+    { "id": 2, "icon": "fa fa-check", "count": "2400+", "title": "Project Done", "description": "Delivering successful solar projects across homes, businesses, and industries — each one a step toward a sustainable future." },
+    { "id": 3, "icon": "fa fa-award", "count": 3123, "title": "Awards Win", "description": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit" },
+    { "id": 4, "icon": "fa fa-users-cog", "count": "200+", "title": "Expert Workers", "description": "Our skilled team brings knowledge, precision, and passion to every solar project, ensuring top-quality results." }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Solar Panels",
+      "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+      "image": "/img/img-600x400-1.jpg",
+      "icon": "fa fa-solar-panel fa-3x"
+    },
+    {
+      "id": 2,
+      "name": "Wind Turbines",
+      "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+      "image": "/img/img-600x400-2.jpg",
+      "icon": "fa fa-wind fa-3x"
+    },
+    {
+      "id": 3,
+      "name": "Hydropower Plants",
+      "description": "Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.",
+      "image": "/img/img-600x400-3.jpg",
+      "icon": "fa fa-lightbulb fa-3x"
+    }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "designation": "Solar Engineer",
+      "image": "/img/team-1.jpg",
+      "social": [
+        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
+        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
+        { "platform": "instagram", "icon": "fab fa-instagram", "url": "#" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "designation": "Project Manager",
+      "image": "/img/team-2.jpg",
+      "social": [
+        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
+        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
+        { "platform": "instagram", "icon": "fab fa-instagram", "url": "#" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mike Johnson",
+      "designation": "Technical Lead",
+      "image": "/img/team-3.jpg",
+      "social": [
+        { "platform": "facebook", "icon": "fab fa-facebook-f", "url": "#" },
+        { "platform": "twitter", "icon": "fab fa-twitter", "url": "#" },
+        { "platform": "instagram", "icon": "fab fa-instagram", "url": "#" }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Wilson",
+      "profession": "Business Owner",
+      "image": "/img/testimonial-1.jpg",
+      "message": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita."
+    },
+    {
+      "id": 2,
+      "name": "David Brown",
+      "profession": "Homeowner",
+      "image": "/img/testimonial-2.jpg",
+      "message": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita."
+    },
+    {
+      "id": 3,
+      "name": "Lisa Davis",
+      "profession": "Environmental Consultant",
+      "image": "/img/testimonial-3.jpg",
+      "message": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita."
+    }
+  ]
+}
