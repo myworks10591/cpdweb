@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Solartec React App
 
 A modern React application converted from HTML template, featuring renewable energy services.
@@ -95,3 +96,7 @@ npm run build
 - Tailwind CSS
 - Font Awesome icons
 - Modern ES6+ JavaScript
+=======
+# cpdweb
+cpdweb
+>>>>>>> db58b4012ca435c655d81afad1a74537d09ea968
